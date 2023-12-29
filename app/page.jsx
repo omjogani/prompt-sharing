@@ -7,7 +7,7 @@ const Home = () => {
         Use & Share
         <br className="max-md:hidden"/>
         {/* <span className="orange_gradient text-center"> AI-Powered Prompt</span> */}
-        <p class="font-extrabold bg-clip-text text-transparent bg-[linear-gradient(to_right,theme(colors.indigo.400),theme(colors.indigo.100),theme(colors.sky.400),theme(colors.fuchsia.400),theme(colors.sky.400),theme(colors.indigo.100),theme(colors.indigo.400))] bg-[length:200%_auto] animate-gradient">AI-Powered Prompt</p>
+        <p className="font-extrabold bg-clip-text text-transparent bg-[linear-gradient(to_right,theme(colors.indigo.400),theme(colors.indigo.100),theme(colors.sky.400),theme(colors.fuchsia.400),theme(colors.sky.400),theme(colors.indigo.100),theme(colors.indigo.400))] bg-[length:200%_auto] animate-gradient">AI-Powered Prompt</p>
 
 
       </h1>

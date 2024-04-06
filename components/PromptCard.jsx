@@ -9,6 +9,10 @@ const PromptCard = ({ post, handleTagClick, handleEdit, handleDelete }) => {
   const { data: session} = useSession();
   const pathName = usePathname();
   const router = useRouter();
+
+  const handleSearchGemini = () => {
+    router.push(`/gemini?id=${post._id}`);
+  }
   
   const handleCopy = () => {
     setCopied(post.prompt);
@@ -37,6 +41,15 @@ const PromptCard = ({ post, handleTagClick, handleEdit, handleDelete }) => {
               {post.creator.email}
             </p>
           </div>
+        </div>
+
+        <div className="copy_btn" onClick={handleSearchGemini}>
+          <Image 
+            src={"/assets/icons/search.svg"}
+            width={12}
+            height={12}
+            alt="Search Gemini Button"
+          />
         </div>
 
         <div className="copy_btn" onClick={handleCopy}>
